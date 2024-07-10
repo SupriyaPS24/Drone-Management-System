@@ -110,17 +110,8 @@ import java.util.*;
         if (currentDirection == Direction.NORTH || currentDirection == Direction.SOUTH) {
             // Move along X-axis first
             if (currentX != x) {
-                if (currentDirection == Direction.NORTH && xDirection == Direction.SOUTH ||
-                        currentDirection == Direction.SOUTH && xDirection == Direction.NORTH) {
-                    Direction intermediateDirection = Direction.EAST;
-                    details.add("Pointed from " + currentDirection + " to " + intermediateDirection);
-                    drone.setDirection(intermediateDirection.name());
-                    currentDirection = intermediateDirection;
-                }
-                if (currentDirection != xDirection) {
-                    details.add("Pointed from " + currentDirection + " to " + xDirection);
-                    drone.setDirection(xDirection.name());
-                }
+                details.add("Pointed from " + currentDirection + " to " + xDirection);
+                drone.setDirection(xDirection.name());
                 currentDirection = xDirection;
                 drone.setCoordinateX(x);
                 details.add("Moved to (" + x + ", " + currentY + ") towards " + xDirection);
@@ -138,17 +129,8 @@ import java.util.*;
         } else {
             // Move along Y-axis first
             if (currentY != y) {
-                if (currentDirection == Direction.EAST && yDirection == Direction.WEST ||
-                        currentDirection == Direction.WEST && yDirection == Direction.EAST) {
-                    Direction intermediateDirection = Direction.NORTH;
-                    details.add("Pointed from " + currentDirection + " to " + intermediateDirection);
-                    drone.setDirection(intermediateDirection.name());
-                    currentDirection = intermediateDirection;
-                }
-                if (currentDirection != yDirection) {
-                    details.add("Pointed from " + currentDirection + " to " + yDirection);
-                    drone.setDirection(yDirection.name());
-                }
+                details.add("Pointed from " + currentDirection + " to " + yDirection);
+                drone.setDirection(yDirection.name());
                 currentDirection = yDirection;
                 drone.setCoordinateY(y);
                 details.add("Moved to (" + currentX + ", " + y + ") towards " + yDirection);

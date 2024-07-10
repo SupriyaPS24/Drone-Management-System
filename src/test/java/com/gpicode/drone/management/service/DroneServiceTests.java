@@ -1,6 +1,5 @@
 package com.gpicode.drone.management.service;
 
-import com.gpicode.drone.management.controller.DroneController;
 import com.gpicode.drone.management.dto.DroneResponse;
 import com.gpicode.drone.management.dto.MoveDroneRequest;
 import com.gpicode.drone.management.dto.MoveDroneResponse;
@@ -26,8 +25,6 @@ import static org.mockito.Mockito.*;
 @SpringBootTest
 public class DroneServiceTests {
 
-    @Mock
-    private DroneController droneController;
     @Mock
     private DroneRepository droneRepository;
 
