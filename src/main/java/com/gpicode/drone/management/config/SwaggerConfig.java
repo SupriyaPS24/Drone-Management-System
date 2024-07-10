@@ -14,12 +14,8 @@ import org.springframework.context.annotation.Configuration;
         ),
         servers = {
                 @Server(
-                        url = "http://localhost:8080",
-                        description = "Local server"
-                ),
-                @Server(
-                        url = "https://api.example.com",
-                        description = "Production server - (currently not available)"
+                        url = "host-url",
+                        description = "Host server - (Example)"
                 )
         }
 )

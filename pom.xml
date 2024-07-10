@@ -11,8 +11,8 @@
 	<groupId>com.gpicode</groupId>
 	<artifactId>drone.management</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>drone.management</name>
-	<description>Demo project for Spring Boot</description>
+	<name>drone-management-system</name>
+	<description>API for Registering, controlling and monitoring drone movements</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -56,11 +56,6 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
