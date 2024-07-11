@@ -120,7 +120,7 @@ If the drone with provided droneId is registered, provide the coordinate and dir
 \
 **Example curl command**
 ```sh
-curl --location 'http://localhost:8080/drones/7ed8815f-ea48-4f23-89d0-380d956e2d38'
+curl --location 'http://localhost:8080/v1/api/drones/7ed8815f-ea48-4f23-89d0-380d956e2d38'
 ```
 **Response:** \
 `200 - OK, with response body`\
